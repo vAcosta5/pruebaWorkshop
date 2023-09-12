@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>eMercado - Todo lo que busques está aquí</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container-fluid" id="loginGeneral">
+    <div class="container" id="loginContainer">
+      <div class="acceso row form">
+        <h2>Login</h2>
+        <form class="pb-5">
+          <input type="text" placeholder="Nombre de usuario" class="form-control" id="usernameLogin" required>
+          <input type="password" placeholder="Contraseña" class="form-control" id="contraseñaLogin" required>
+          <input type="button" class="btn btn-dark mt-2" id="btnAcceder" value="Acceder" required>
+        </form>
+        <p id="msgErrorLogin">Ingrese sus datos.</p>
+      </div>
+      <div class="registro row form">
+        <h2>Registro</h2>
+        <form class="pb-5">
+          <input type="text" placeholder="Nombre de usuario" id="usernameRegistro" class="form-control" required>
+          <input type="password" placeholder="Contraseña" id="contraseñaRegistro" class="form-control" required>
+          <input type="password" placeholder="Confirme su contraseña" id="contraseñaRegistro2" class="form-control" required>
+          <input type="email" placeholder="Email" id="emailRegistro" class="form-control" required>
+          <input type="date" placeholder="Fecha de nacimiento" id="nacimientoRegistro" class="form-control" required>
+          <input type="button" class="btn btn-dark mt-2" id="btnRegistro" value="Registrarse">
+        </form>
+        <p id="msgErrorRegistro">Ingrese sus datos.</p>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="switchLoginRegistro">
+        <label class="form-check-label" for="switchLoginRegistro">¿No tienes una cuenta?<br>Pulsa para ir al menú de registro.</label>
+      </div>
+      <div class="alert alert-dismissible fade" id="notification" role="alert">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <span id="notification-message"></span>
+      </div>
+    </div>
+  </div>
+  <script src="js/login.js"></script>
+</body>
+</html>
